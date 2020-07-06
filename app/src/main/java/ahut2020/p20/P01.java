@@ -14,5 +14,5 @@ public class P01 {
         }
         System.out.println(tot);
 
-}
+    }
 }
