@@ -6,6 +6,7 @@ public class P04CharacterArray {
     public static void main(String[] args) {
         //char[] a={'J','a','v','a'};
         char [] a="ahut2020-AndroidProgramming".toCharArray();
+        System.out.println(a.hashCode());
         a[0]-=32;  a[1]-=32;
         a[2]-=32;
         a[3]-=32;
@@ -13,5 +14,6 @@ public class P04CharacterArray {
         System.out.println(a);
         Arrays.sort(a);
         System.out.println(a);
+        System.out.println(a.hashCode());
     }
 }
