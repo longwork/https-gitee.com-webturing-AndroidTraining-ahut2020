@@ -13,8 +13,8 @@ public class P01CounterLetterFrequency {
                 break;
             }
             for (char c : s.toCharArray()) {
-                if(Character.isLetter(c))
-                    a[c-'a']++;
+                if (Character.isLetter(c))
+                    a[c - 'a']++;
 
             }
         }

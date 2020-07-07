@@ -4,7 +4,7 @@ public class P03CarserEncypherDecode {
     public static void main(String[] args) {
         String s = "L olnh Mdyd surjudpplqj~";
 
-        for(int offset=1;offset<26;++offset) {
+        for (int offset = 1; offset < 26; ++offset) {
             StringBuffer t = new StringBuffer();
             for (char c : s.toCharArray()) {
                 if (!Character.isLetter(c)) {
@@ -25,7 +25,7 @@ public class P03CarserEncypherDecode {
                 }
 
             }
-            System.out.println(offset+" "+t.toString());
+            System.out.println(offset + " " + t.toString());
         }
     }
 }

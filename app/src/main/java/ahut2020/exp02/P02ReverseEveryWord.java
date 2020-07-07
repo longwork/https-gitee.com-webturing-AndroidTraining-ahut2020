@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class P02ReverseEveryWord {
     public static void main(String[] args) {
-       String s="You think you can";
-       String[] words=s.split("\\s+");
+        String s = "You think you can";
+        String[] words = s.split("\\s+");
         System.out.println(Arrays.toString(words));
-        for(String word:words){
-            StringBuffer buffer=new StringBuffer(word);
-            System.out.print(buffer.reverse()+" ");
+        for (String word : words) {
+            StringBuffer buffer = new StringBuffer(word);
+            System.out.print(buffer.reverse() + " ");
         }
     }
 }
