@@ -1,5 +1,7 @@
 # AndroidTraining-ahut2020
 
+by ZHAO Jing  260768400@qq.com
+
 ## Day01:
 ### 准备 
 #### 环境搭建
@@ -11,8 +13,8 @@
 
 - runoob [菜鸟教程](https://www.runoob.com)
 - git
-- java
-- android
+- java [java基础教程](https://www.runoob.com/java/java-tutorial.html)
+- android[Andoid基础](runoob.com/w3cnote/android-tutorial-intro.html)
 
 ### 工具
 - git/github/gitee
@@ -67,3 +69,44 @@
   - 排序 :Arrays.sort对基本数据类型仅支持按照非降序排列
   - 查找：Arrays.binarySearch对基本数据类型仅支持已经按照非降序排列的二分查找
 
+## Day02  java 基础：字符和字符串基础
+
+### 字符char
+
+- Unicode vs ASCII
+- 字符的表示'c' \u0045
+
+#### 包装器Character类
+
+- 分类 isDigit/isUpper/isLower/isSpace
+- 大小写转化toUpperCase/toLowerCase
+
+#### 字符数组
+
+- 长度length 不可变
+- 排序
+
+### 字符串类
+
+#### 不可变的字符串类String
+
+- 因为不可以改变，所以不适合大量的拼接（每次拼接都会产生一个副本）
+
+- API：length/charAt/indexOf/startsWith/endsWith/contain/split
+- 类型转化: parsXXX
+- 查找/匹配: 多次查找匹配
+
+#### 可变字符串类StringBuilder/StringBuffer
+
+- 字符的可以扩展的列表
+- 适合频繁修改的场景
+
+### 正则表达式
+
+- 模式匹配
+- 常用模式（闭包）
+  - 数字 \d
+  - 字母 [a-zA-Z]
+  - 非 ^ 
+  - 正闭包+
+  - 星闭包*  
