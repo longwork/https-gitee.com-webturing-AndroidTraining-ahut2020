@@ -129,7 +129,7 @@ by ZHAO Jing  zj@webturing.com
 
 - protected:子类可见
 
--public：所有类都可见
+- public：所有类都可见
 
 #### 静态字段static与成员字段
 
@@ -168,19 +168,17 @@ by ZHAO Jing  zj@webturing.com
 
 ##### 抽象类的子类如果要实例化（生成实例，调用该类构造函数）则必须实现抽象方法，否则子类也必须声明为抽象类
 
-##### final 定义的变量为常量：
-
-- Et .final int a=3;后a++则编译错误
+- final 定义的变量为常量：Et .final int a=3;后a++则编译错误
 
 - 如果为引用类型，表示引用关系不会改变（对象本身可以数值变化）
 
-- Final描述的方法不可以被子类重载
+- final描述的方法不可以被子类重载
 
-- Final 描述的类，不可以有子类（称为最终类）
+- final 描述的类，不可以有子类（称为最终类）
 
 - final/abstract永远不会同时修饰一个元素
 
-###  接口和包
+###  3接口和包
 
 #### 接口interface:
 
@@ -200,9 +198,9 @@ by ZHAO Jing  zj@webturing.com
 
 - 定义在类A内部的类B称为内部类，其名称为A$B.class，为了提高封装性
 
-- 匿名类：隐式继承/实现一个类(接口)A（一般都重载该类方法），为了提高程序的效率，如比较器和窗体鼠标消息等
+- 匿名类：隐式继承/实现一个类(接口)A（一般都重载该类方法），为了提高程序的效率，如比较器Comparator和窗体鼠标消息等
 
-### . OO建模：//封装，继承，组合
+### 4 OO建模：//封装，继承，组合
 
 #### 基本数据建模：分数，点，日期等
 
@@ -210,3 +208,52 @@ by ZHAO Jing  zj@webturing.com
 - 列表：顺序表（栈，队列，单链表，双向链表）
 - 二叉树
 - 图：
+
+## Day04:Java集合框架
+
+### 集合框架概述java.util.*
+
+#### 集合框架意义
+
+#### 集合框架的核心技术：
+
+- 泛型编程  class XXX<T>{}
+
+- 算法和数据结构的实现
+
+- OOP的典范
+
+#### 算法库：
+
+- 静态算法（用类调用）：Math/Arrays/Collections
+
+- 对象算法：Random BigInteger BigDecimal
+
+- 包装器：Integer Long Character	
+
+###  顺序表：Vector/ArrayList/Stack/LinkedList/Queue
+
+### 数组表：动态容量实现
+
+- Vector
+
+- ArrayList
+
+  #### 数组表的应用Stack
+
+- 括号匹配检测
+
+- 后缀式的计算
+
+#### 链表 LinkedList 双向链表
+
+i. 集合迭代器访问方法
+
+ii. Foreach
+
+iii. Get（index)//链表O(n),数组表为O(1)
+
+#### 链表的应用 队列Queue
+
+- 队列模拟
+- 宽度优先搜索
