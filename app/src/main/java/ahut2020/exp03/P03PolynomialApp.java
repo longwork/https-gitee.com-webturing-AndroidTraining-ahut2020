@@ -92,7 +92,7 @@ public class P03PolynomialApp {
         }
 
         Polynomial mul(Polynomial that) {
-            int n = this.n * that.n;
+            int n = this.n + that.n;
             int[] k = new int[n + 1];
             for (int i = 0; i <= this.n; i++)
                 for (int j = 0; j <= that.n; j++) {
