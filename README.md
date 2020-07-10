@@ -257,3 +257,59 @@ iii. Get（index)//链表O(n),数组表为O(1)
 
 - 队列模拟
 - 宽度优先搜索
+
+## Day05:Java集合框架(2):
+
+### Set:
+
+####  Set://不再支持随机访问（索引访问）
+
+i. 基于排序树TreeSet:
+
+1. 排序 去重 
+
+2. 所有操作原子操作都是lg(N)
+
+ii. 基于哈希表HashSet
+
+1. 去重
+
+2. 所有原子操作 O(1)
+
+   
+
+### Map<K,V>
+
+i. 基于排序树TreeMap要求键有序
+
+ii. 基于哈系表HashMap 不保证键有序
+
+iii. 迭代键的集合keySet(),valueSet()， EntrySet（）
+
+\3. Queue： 
+
+###  PriorityQueue :（**k**th查询比较高效）
+
+- 保证所有操作都是log(n)
+- 默认是小顶堆
+- 大顶堆的定义 new PriorityQueue<>(Collections.reverseOrder());
+
+### .案例建模：
+
+i. 字符串统计,键值互转
+
+ii. 利用Map实现电话本操作
+
+iii. 利用Map实现数据库的模拟（登录验证）
+
+iv. 二叉树建模：BinaryTree
+
+v. 图建模：TreeMap<Integer,Vector<Integer>> graph;
+
+###  总结：
+
+- 深入理解Java泛型思想
+
+-  掌握集合排序、各种数据结构操作
+
+- 利用集合框架提升建模和编程能力
