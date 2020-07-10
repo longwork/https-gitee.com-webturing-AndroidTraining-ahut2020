@@ -23,20 +23,11 @@ public class P08BinaryTreeDemo {
             int pos = mid.indexOf(root);
             String leftMid = mid.substring(0, pos);
             String rightMid = mid.substring(pos + 1);
-            String leftPre = "";
-            String rightPre = "";
-            for (int i = 1; i < pre.length(); i++) {
-                char c = pre.charAt(i);
-                if (leftMid.indexOf(c) >= 0) {
-                    leftPre += c;
-                } else if (rightMid.indexOf(c) >= 0) {
-                    rightPre += c;
-                }
-            }
+            String leftPre = pre.substring(1, pos + 1);
+            String rightPre = pre.substring(pos + 1);
             BinaryTree left = create(leftPre, leftMid);
             BinaryTree right = create(rightPre, rightMid);
             return new BinaryTree(root, left, right);
-
         }
 
         void postVist() {
