@@ -30,18 +30,18 @@ public class P08BinaryTreeDemo {
             return new BinaryTree(root, left, right);
         }
 
-        void postVist() {
+        void postVisit() {
             if (left != null)
-                left.postVist();
+                left.postVisit();
             if (right != null)
-                right.postVist();
+                right.postVisit();
             System.out.print(root);
         }
     }
 
     public static void main(String[] args) {
         BinaryTree tree=BinaryTree.create("ABFCDGHEI","BFAGDHCIE");
-        tree.postVist();
+        tree.postVisit();
     }
 }
 //## 8. 输出二叉树
